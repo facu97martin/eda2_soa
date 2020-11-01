@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EdA2_Martin-FacundoLeonel-40570462</string>
+    <string name="soa_server">http://so-unlam.net.ar/api/</string>
+    <string name="environment">PROD</string>
+</resources>

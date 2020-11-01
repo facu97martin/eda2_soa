@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/divider_h"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider_v"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_acelerometro"
+        android:layout_width="169dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="Acelerómetro"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/divider_v"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/text_acelerometro_x"
+        android:layout_width="152dp"
+        android:layout_height="44dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="textPersonName"
+        android:text="x= 0.000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/divider_v"
+        app:layout_constraintTop_toBottomOf="@+id/text_acelerometro" />
+
+    <EditText
+        android:id="@+id/text_acelerometro_y"
+        android:layout_width="152dp"
+        android:layout_height="44dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="textPersonName"
+        android:text="y= 0.000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/divider_v"
+        app:layout_constraintTop_toBottomOf="@+id/text_acelerometro_x" />
+
+    <EditText
+        android:id="@+id/text_acelerometro_z"
+        android:layout_width="152dp"
+        android:layout_height="44dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="textPersonName"
+        android:text="z= 0.000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/divider_v"
+        app:layout_constraintTop_toBottomOf="@+id/text_acelerometro_y" />
+
+    <TextView
+        android:id="@+id/text_giroscopio"
+        android:layout_width="169dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="Giroscopio"
+        app:layout_constraintLeft_toLeftOf="@+id/divider_v"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/text_giroscopio_x"
+        android:layout_width="152dp"
+        android:layout_height="44dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="textPersonName"
+        android:text="x= 0.000"
+        app:layout_constraintLeft_toLeftOf="@+id/divider_v"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_giroscopio" />
+
+    <EditText
+        android:id="@+id/text_giroscopio_y"
+        android:layout_width="152dp"
+        android:layout_height="44dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="textPersonName"
+        android:text="y= 0.000"
+        app:layout_constraintLeft_toLeftOf="@+id/divider_v"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_giroscopio_x" />
+
+    <EditText
+        android:id="@+id/text_giroscopio_z"
+        android:layout_width="152dp"
+        android:layout_height="44dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="textPersonName"
+        android:text="z= 0.000"
+        app:layout_constraintLeft_toLeftOf="@+id/divider_v"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_giroscopio_y" />
+
+    <TextView
+        android:id="@+id/text_proximidad"
+        android:layout_width="169dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="Proximidad"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/divider_v"
+        app:layout_constraintTop_toTopOf="@+id/divider_h" />
+
+    <EditText
+        android:id="@+id/text_proximidad_valor"
+        android:layout_width="152dp"
+        android:layout_height="44dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="textPersonName"
+        android:text="d= 0.0000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/divider_v"
+        app:layout_constraintTop_toBottomOf="@+id/text_proximidad" />
+
+    <TextView
+        android:id="@+id/text_luz"
+        android:layout_width="169dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="Luz"
+        app:layout_constraintLeft_toLeftOf="@+id/divider_v"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/divider_h" />
+
+    <EditText
+        android:id="@+id/text_luz_valor"
+        android:layout_width="152dp"
+        android:layout_height="44dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="textPersonName"
+        android:text="lux= 0.0000"
+        app:layout_constraintLeft_toLeftOf="@+id/divider_v"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_luz" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

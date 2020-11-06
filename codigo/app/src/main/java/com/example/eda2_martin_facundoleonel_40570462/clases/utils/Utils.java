@@ -1,11 +1,9 @@
 package com.example.eda2_martin_facundoleonel_40570462.clases.utils;
 
 import android.content.Context;
-import android.content.res.Resources;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.example.eda2_martin_facundoleonel_40570462.R;
 import com.example.eda2_martin_facundoleonel_40570462.clases.requests.RegistrarEventoRequest;
@@ -26,7 +24,7 @@ public class Utils {
         RegistrarEventoRequest request = new RegistrarEventoRequest();
 
         request.setEnv(applicationContext.getString(R.string.environment));
-        request.setTypeEvents(typeEvents);
+        request.setType_events(typeEvents);
         request.setDescription(description);
 
         Retrofit retrofit = new Retrofit.Builder()
@@ -35,7 +33,7 @@ public class Utils {
                 .build();
 
         RegistrarEventoService registrarEventoService = retrofit.create(RegistrarEventoService.class);
-        Call<RegistrarEventoResponse> call = registrarEventoService.registrarEvento(bearerToken, request);
+        Call<RegistrarEventoResponse> call = registrarEventoService.registrarEvento("Bearer " + bearerToken, request);
 
         call.enqueue(new Callback<RegistrarEventoResponse>() {
             @Override

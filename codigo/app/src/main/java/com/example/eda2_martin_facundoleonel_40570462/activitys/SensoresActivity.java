@@ -11,6 +11,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.eda2_martin_facundoleonel_40570462.R;
+import com.example.eda2_martin_facundoleonel_40570462.clases.responses.RegistrarEventoResponse;
+import com.example.eda2_martin_facundoleonel_40570462.clases.services.RegistrarEventoService;
 
 import java.text.DecimalFormat;
 
